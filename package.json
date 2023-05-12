@@ -1,0 +1,21 @@
+{
+  "name": "viberadio",
+  "version": "1.0.0-beta",
+  "description": "Fetch the latest statistics from Vibe Radio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vibe",
+    "radio",
+    "internet",
+    "online", 
+    "music"
+  ],
+  "author": "jackdawson",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
