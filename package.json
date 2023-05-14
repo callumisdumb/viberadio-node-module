@@ -1,6 +1,6 @@
 {
   "name": "viberadio",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "description": "Fetch the latest statistics from Vibe Radio.",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,9 @@
     "vibe",
     "radio",
     "internet",
-    "online", 
+    "online",
     "music"
   ],
   "author": "jackdawson",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^1.4.0"
-  }
+  "license": "ISC"
 }
