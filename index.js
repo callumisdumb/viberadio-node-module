@@ -1,9 +1,1 @@
-const fetchStats = async function () {
-  const response = await fetch("https://api.viberadio.net/stats").catch((e) => {
-    throw Error(`Error fetching statistics: ${e}`);
-  })
-
-  return response.json()
-};
-
-module.exports = { fetchStats };
+module.exports = require('./lib/index')
