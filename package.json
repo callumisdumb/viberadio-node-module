@@ -1,6 +1,6 @@
 {
   "name": "viberadio",
-  "version": "1.0.1-beta",
+  "version": "1.0.1",
   "description": "Fetch the latest statistics from Vibe Radio.",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,10 @@
     "online",
     "music"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viberadionet/node-module.git"
+  },
   "author": "jackdawson",
   "license": "ISC"
 }
