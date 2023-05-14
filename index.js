@@ -1,13 +1,9 @@
-const axios = require("axios");
-
 const fetchStats = async function () {
-  try {
-    const response = await axios.get("https://api.viberadio.net/stats");
-    return response.data;
-  } catch (error) {
-    console.error("Error fetching statistics:", error);
-    throw error;
-  }
+  const response = await fetch("https://api.viberadio.net/stats").catch((e) => {
+    throw Error(`Error fetching statistics: ${e}`);
+  })
+
+  return response.json()
 };
 
-module.exports = { fetchStats };
+export default { fetchStats };
