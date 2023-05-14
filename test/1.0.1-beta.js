@@ -1,4 +1,4 @@
-const Vibe = require("../index").default
+const Vibe = require("../index")
 
 async function test() {
     await Vibe.fetchStats().then((d) => {

@@ -6,4 +6,4 @@ const fetchStats = async function () {
   return response.json()
 };
 
-export default { fetchStats };
+module.exports = { fetchStats };
