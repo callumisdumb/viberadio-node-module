@@ -22,7 +22,7 @@ Vibe.fetchStats()
 ```
 
 > Response
-```
+```json
 {
   presenter: {
     name: 'Fly',
@@ -45,3 +45,24 @@ Vibe.fetchStats()
 ## Package support
 
 If you've got any problems, don't hesitate to join our [Discord Server](https://discord.gg/viberadio) if you aren't already in it.
+
+## Contributing
+
+In order to contribute a new module to the package, you need to create a new file in the "modules" folder.
+
+You can name your function anything.
+
+> Example code
+```js
+const YourFunction = async function () {
+  const response = await fetch("https://api.viberadio.net/stats").catch((e) => {
+    throw Error(`Error fetching statistics: ${e}`);
+  })
+
+  return response.json()
+};
+
+module.exports = { YourFunction };
+```
+
+After you're done please PR your changes. If applicable, please bump the version in alignment with the [Semantic Versioning](https://semver.org) rules
